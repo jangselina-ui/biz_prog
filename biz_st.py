@@ -76,3 +76,47 @@ col3.latex('\int_a^b f(x)dx') #컬럼 안에 수식 출력
 st.divider() #구분선
 
 
+'# :blue[Streamlit 그래프]'
+import pandas as pd
+import numpy as np
+
+chart_data = pd.DataFrame(
+    np.random.randn(20, 3),
+    #랜덤한 숫자 20행 3열의 데이터프레임 생성
+    columns=["a", "b", "c"]
+)
+
+'#### :orange[st.area_chart()]'
+st.area_chart(chart_data)
+
+'#### :orange[st.line_chart()]'
+st.line_chart(chart_data)
+
+'#### :orange[st.bar_chart()]'
+st.bar_chart(chart_data)
+
+'#### :orange[st.scatter_chart()]'
+st.scatter_chart(chart_data)
+
+'#### :orange[st.map()]'
+df = pd.DataFrame(
+    np.random.randn(100, 2) / [100, 100] + [37.55, 126.92],
+    columns=["lat", "lon"]
+)
+st.map(df)
+
+st.divider()  # 구분선
+
+'# :blue[시각화 라이브러리]'
+
+'#### :orange[Matplotlib: st.pyplot()]'
+import matplotlib.pyplot as plt 
+import numpy as np
+
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+fig, ax = plt.subplots()
+ax.plot(x, y)
+st.pyplot(fig) # 피겨까지 차트 출력
+
