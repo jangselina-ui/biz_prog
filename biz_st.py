@@ -31,7 +31,7 @@ st.latex('\int_a^b f(x)dx')
 "$$\int_a^b f(x)dx$$"
 
 '#### :orange[이미지: st.image()]'
-st.image("../data/python설명.jpg", caption='파이썬 로고', width=500)
+st.image("data2/python설명.jpg", caption='파이썬 로고', width=500)
 
 '#### :orange[오디오: st.audio()]'
 st.audio("../data/mp3노래.mp3", format='audio/mp3', loop=True)
