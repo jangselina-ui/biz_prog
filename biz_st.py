@@ -34,10 +34,10 @@ st.latex('\int_a^b f(x)dx')
 st.image("data2/python설명.jpg", caption='파이썬 로고', width=500)
 
 '#### :orange[오디오: st.audio()]'
-st.audio("../data/mp3노래.mp3", format='audio/mp3', loop=True)
+st.audio("../data2/mp3노래.mp3", format='audio/mp3', loop=True)
 
 '#### :orange[동영상: st.video()]'
-video_file = open("../data/연주.mp4", 'rb')
+video_file = open("../data2/연주.mp4", 'rb')
 video_bytes = video_file.read()
 
 st.video(video_bytes)
