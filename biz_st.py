@@ -19,7 +19,7 @@ print('코드블록')
 ```
 '''
 
-st.caption('캡션(작고 흐린 글씨)>> st.caption()')
+st.caption('캡션(작고 흐린 글씨) st.caption()')
 
 with st.echo():
     #이 블록의 코드와 결과를 출력
